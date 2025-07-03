@@ -512,15 +512,27 @@ class HomepageRenderer {
     
     static createSeriesCard(series, config) {
         const card = document.createElement('div');
-        card.className = 'series-card';
+        card.className = 'series-card animate-fade-in-up';
+        
+        // Add animation delay based on index
+        const seriesIndex = ['shmeiras-einayim', 'shemiras-halashon', 'shabbos-malkesa', 'dating', 'shalom-bayis', 'mesilas-yesharim', 'shalom-bayis-hebrew'].indexOf(series.slug);
+        card.style.animationDelay = `${seriesIndex * 0.1}s`;
         
         card.innerHTML = `
-            <img src="${config.cover}" alt="${series.title}" class="series-cover" loading="lazy">
+            <div class="series-cover-container">
+                <img src="${config.cover}" alt="${series.title}" class="series-cover" loading="lazy">
+                <div class="series-overlay">
+                    <div class="play-icon">▶</div>
+                </div>
+            </div>
             <div class="series-content">
                 <h3 class="series-title">${series.title}</h3>
                 <p class="series-tagline">${series.tagline}</p>
                 <p class="series-description">${series.description}</p>
-                <p class="episode-count">${series.episodeCount}</p>
+                <div class="series-meta">
+                    <span class="episode-count">${series.episodeCount}</span>
+                    <span class="series-badge">${series.slug.includes('hebrew') ? 'עברית' : 'English'}</span>
+                </div>
                 <a href="/podcasts/${series.slug}.html" class="btn btn-primary btn-full">
                     Listen Now
                 </a>
