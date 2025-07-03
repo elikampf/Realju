@@ -74,12 +74,15 @@ class EpisodeLoader {
     
     // Initialize episode loading for a specific series
     async initializeSeries(seriesSlug) {
+        console.log('Episode loader: Initializing series', { seriesSlug });
         this.currentSeries = PODCAST_SERIES[seriesSlug];
         
         if (!this.currentSeries) {
             console.error(`Series not found: ${seriesSlug}`);
             return;
         }
+        
+        console.log('Episode loader: Series config found', { seriesType: this.currentSeries.type });
         
         // Load podcast data dynamically
         await this.loadPodcastData(seriesSlug);
@@ -141,6 +144,13 @@ class EpisodeLoader {
     
     // Main episode loading logic
     loadEpisodes() {
+        console.log('Episode loader: Loading episodes', { 
+            hasContainer: !!document.getElementById('episodes-container'),
+            hasPodcastData: !!this.podcastData,
+            podcastDataTitle: this.podcastData?.title,
+            episodeCount: this.podcastData?.episodes?.length
+        });
+        
         const container = document.getElementById('episodes-container');
         if (!container || !this.podcastData) {
             console.log('Episode loader: Container or podcast data not found', { container: !!container, podcastData: !!this.podcastData });
@@ -535,9 +545,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Individual podcast page
-    const podcastMatch = path.match(/\/podcasts\/([^\/]+)\.html/);
+    const podcastMatch = path.match(/\/podcasts\/([^\/]+)\.html/) || path.match(/podcasts\/([^\/]+)\.html/);
     if (podcastMatch) {
         const seriesSlug = podcastMatch[1];
+        console.log('Episode loader: Initializing series', { seriesSlug, path });
         const episodeLoader = new EpisodeLoader();
         episodeLoader.initializeSeries(seriesSlug);
     }
