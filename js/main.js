@@ -446,7 +446,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Real Judaism website initialized successfully');
 
     const path = window.location.pathname;
-    const podcastMatch = path.match(/podcasts\/([^\/]+)\.html/);
+    const podcastMatch = path.match(/podcasts\/([^\/]+)(?:\.html)?$/);
     if (podcastMatch && window.EpisodeLoader) {
         console.log('main.js: Forcing EpisodeLoader initialization for', podcastMatch[1]);
         const episodeLoader = new window.EpisodeLoader();

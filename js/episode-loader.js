@@ -545,7 +545,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Individual podcast page
-    const podcastMatch = path.match(/\/podcasts\/([^\/]+)\.html/) || path.match(/podcasts\/([^\/]+)\.html/);
+    const podcastMatch = path.match(/\/podcasts\/([^\/]+)(?:\.html)?$/);
     if (podcastMatch) {
         const seriesSlug = podcastMatch[1];
         console.log('Episode loader: Initializing series', { seriesSlug, path });
