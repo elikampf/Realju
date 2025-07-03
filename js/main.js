@@ -444,6 +444,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     console.log('Real Judaism website initialized successfully');
+
+    const path = window.location.pathname;
+    const podcastMatch = path.match(/podcasts\/([^\/]+)\.html/);
+    if (podcastMatch && window.EpisodeLoader) {
+        console.log('main.js: Forcing EpisodeLoader initialization for', podcastMatch[1]);
+        const episodeLoader = new window.EpisodeLoader();
+        episodeLoader.initializeSeries(podcastMatch[1]);
+    } else {
+        console.log('main.js: Not a podcast page or EpisodeLoader not found.', { path, hasEpisodeLoader: !!window.EpisodeLoader });
+    }
 });
 
 // ============================================
