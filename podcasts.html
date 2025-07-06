@@ -3,21 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore all Real Judaism podcast series - practical Torah wisdom for marriage, dating, spiritual growth, and daily Jewish living from Rabbi Ari Klapper.">
-    <meta name="keywords" content="Torah podcasts, Jewish podcasts, marriage guidance, dating advice, spiritual growth, Rabbi Klapper">
+    <meta name="description" content="Torah podcast series by Rabbi Ari Klapper. Practical guidance for dating, marriage, spiritual growth, and daily Jewish living.">
+    <meta name="keywords" content="Torah podcasts, Jewish podcasts, Rabbi Ari Klapper, shalom bayis, dating, spiritual growth">
     <meta name="author" content="Rabbi Ari Klapper">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Podcast Series - Real Judaism">
-    <meta property="og:description" content="Practical Torah wisdom for modern life. Explore marriage, dating, spiritual growth, and daily guidance podcast series.">
+    <meta property="og:title" content="Torah Podcast Series - Real Judaism">
+    <meta property="og:description" content="Practical Torah wisdom for dating, marriage, spiritual growth, and daily Jewish living.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://realjudaism.org/podcasts.html">
-    <meta property="og:image" content="/Images/Profile-image.png">
+    <meta property="og:image" content="/Images/podcast-cover-full.png">
     
-    <title>Podcast Series - Real Judaism</title>
+    <title>Torah Podcast Series - Real Judaism</title>
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Real Judaism Podcast Series",
+        "description": "Torah wisdom for modern life challenges",
+        "url": "https://realjudaism.org/podcasts.html",
+        "author": {
+            "@type": "Person",
+            "name": "Rabbi Ari Klapper"
+        }
+    }
+    </script>
 </head>
 
 <body>
@@ -38,34 +53,13 @@
                     <li>
                         <a href="podcasts.html" class="nav-link has-dropdown active">Podcasts</a>
                         <div class="dropdown-menu">
-                            <a href="podcasts/dating.html">
-                                <div class="series-title">Dating</div>
-                                <div class="series-tagline">Find Your Bashert</div>
-                            </a>
-                            <a href="podcasts/shalom-bayis.html">
-                                <div class="series-title">Shalom Bayis</div>
-                                <div class="series-tagline">From "Me" to "We"</div>
-                            </a>
-                            <a href="podcasts/shalom-bayis-hebrew.html">
-                                <div class="series-title">שלום בית עברית</div>
-                                <div class="series-tagline">הביאו את השכינה לבית</div>
-                            </a>
-                            <a href="podcasts/shmeiras-einayim.html">
-                                <div class="series-title">Shmeiras Einayim</div>
-                                <div class="series-tagline">Win the Daily Battle</div>
-                            </a>
-                            <a href="podcasts/shemiras-halashon.html">
-                                <div class="series-title">Shemiras Halashon</div>
-                                <div class="series-tagline">Master Your Words</div>
-                            </a>
-                            <a href="podcasts/shabbos-malkesa.html">
-                                <div class="series-title">Shabbos Malkesa</div>
-                                <div class="series-tagline">Weekly Inspiration</div>
-                            </a>
-                            <a href="podcasts/mesilas-yesharim.html">
-                                <div class="series-title">Mesilas Yesharim</div>
-                                <div class="series-tagline">Spiritual Growth</div>
-                            </a>
+                            <a href="podcasts/dating.html">Dating</a>
+                            <a href="podcasts/shalom-bayis.html">Shalom Bayis</a>
+                            <a href="podcasts/shalom-bayis-hebrew.html">שלום בית עברית</a>
+                            <a href="podcasts/shmeiras-einayim.html">Shmeiras Einayim</a>
+                            <a href="podcasts/shemiras-halashon.html">Shemiras Halashon</a>
+                            <a href="podcasts/shabbos-malkesa.html">Shabbos Malkesa</a>
+                            <a href="podcasts/mesilas-yesharim.html">Mesilas Yesharim</a>
                         </div>
                     </li>
                     <li><a href="blog.html" class="nav-link">Blog</a></li>
@@ -89,236 +83,137 @@
     <div class="mobile-nav-overlay">
         <div class="mobile-nav-close">&times;</div>
         <a href="index.html" class="nav-link">Home</a>
-        <a href="podcasts.html" class="nav-link">Podcasts</a>
+        <div class="dropdown-toggle">Podcasts</div>
+        <div class="mobile-dropdown">
+            <a href="podcasts.html">All Podcasts</a>
+            <a href="podcasts/dating.html">Dating</a>
+            <a href="podcasts/shalom-bayis.html">Shalom Bayis</a>
+            <a href="podcasts/shalom-bayis-hebrew.html">שלום בית עברית</a>
+            <a href="podcasts/shmeiras-einayim.html">Shmeiras Einayim</a>
+            <a href="podcasts/shemiras-halashon.html">Shemiras Halashon</a>
+            <a href="podcasts/shabbos-malkesa.html">Shabbos Malkesa</a>
+            <a href="podcasts/mesilas-yesharim.html">Mesilas Yesharim</a>
+        </div>
         <a href="blog.html" class="nav-link">Blog</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="contact.html" class="nav-link">Contact</a>
-        <a href="contact.html" class="btn btn-primary">Get Torah Guidance</a>
+        <a href="contact.html" class="btn btn-primary mobile-btn-margin">Get Torah Guidance</a>
     </div>
     
     <main id="main-content">
-        <!-- Page Header -->
-        <section class="section" style="padding-top: 60px; background: var(--warm-cream);">
-            <div class="container text-center">
-                <h1>Practical Torah Wisdom for Real Life</h1>
-                <p class="large-text">Choose the series that addresses your biggest challenge right now</p>
-            </div>
-        </section>
-        
-        <!-- New Here? Section -->
-        <section class="section" style="background: var(--light-blue);">
+        <!-- Podcast Hero Section -->
+        <section class="podcast-landing-hero">
             <div class="container">
-                <div class="text-center mb-48">
-                    <h2>New Here? Start With These</h2>
-                    <p class="large-text">Begin your journey with these beginner-friendly series</p>
-                </div>
-                
-                <div class="series-grid" style="grid-template-columns: repeat(3, 1fr);">
-                    <div class="series-card">
-                        <div style="position: relative;">
-                            <img src="/Images/podcast-cover-full.png" alt="Dating Series" class="series-cover">
-                            <div style="position: absolute; top: 12px; right: 12px; background: var(--warm-gold); color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">BEST FIRST</div>
+                <div class="podcast-hero-content">
+                    <div class="text-overline text-accent mb-4">Torah Podcast Network</div>
+                    <h1 class="text-display mb-6">Real Wisdom for Real Life</h1>
+                    <p class="text-body-large mb-8 max-width-800 mx-auto">Seven comprehensive podcast series covering every aspect of Jewish living. From finding your soulmate to mastering your words, from daily spiritual battles to weekly Shabbos inspiration.</p>
+                    
+                    <div class="podcast-hero-stats">
+                        <div class="podcast-stat">
+                            <div class="podcast-stat-number">7</div>
+                            <div class="podcast-stat-label">Podcast Series</div>
                         </div>
-                        <div class="series-content">
-                            <h3 class="series-title">Dating</h3>
-                            <p class="series-tagline">Find Your Bashert with Torah Wisdom</p>
-                            <p class="series-description">Perfect for singles seeking guidance. Complete 8-episode series that covers everything from self-preparation to engagement.</p>
-                            <div style="display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap;">
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">8 Episodes</span>
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">Complete</span>
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">Beginner</span>
-                            </div>
-                            <a href="podcasts/dating.html" class="btn btn-primary btn-full">Start Here</a>
+                        <div class="podcast-stat">
+                            <div class="podcast-stat-number">300+</div>
+                            <div class="podcast-stat-label">Episodes</div>
+                        </div>
+                        <div class="podcast-stat">
+                            <div class="podcast-stat-number">20+</div>
+                            <div class="podcast-stat-label">Years Experience</div>
                         </div>
                     </div>
                     
-                    <div class="series-card">
-                        <div style="position: relative;">
-                            <img src="/Images/shalom-bayis-cover.png" alt="Shalom Bayis Series" class="series-cover">
-                            <div style="position: absolute; top: 12px; right: 12px; background: var(--primary-navy); color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">POPULAR</div>
-                        </div>
-                        <div class="series-content">
-                            <h3 class="series-title">Shalom Bayis</h3>
-                            <p class="series-tagline">From "Me" to "We" - The Complete Guide</p>
-                            <p class="series-description">Essential for married couples. Learn to build real intimacy and navigate the transition from individual to partnership.</p>
-                            <div style="display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap;">
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">Complete Series</span>
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">Beginner</span>
-                            </div>
-                            <a href="podcasts/shalom-bayis.html" class="btn btn-primary btn-full">Start Here</a>
-                        </div>
-                    </div>
-                    
-                    <div class="series-card">
-                        <div style="position: relative;">
-                            <img src="/Images/shemiras-einyim-cover.png" alt="Shmeiras Einayim Series" class="series-cover">
-                            <div style="position: absolute; top: 12px; right: 12px; background: var(--success-green); color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">DAILY</div>
-                        </div>
-                        <div class="series-content">
-                            <h3 class="series-title">Shmeiras Einayim</h3>
-                            <p class="series-tagline">Win the Battle That Happens Every Day</p>
-                            <p class="series-description">For anyone struggling with daily spiritual challenges. Practical strategies for maintaining focus in a challenging world.</p>
-                            <div style="display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap;">
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">Complete Series</span>
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">Beginner</span>
-                            </div>
-                            <a href="podcasts/shmeiras-einayim.html" class="btn btn-primary btn-full">Start Here</a>
+                    <div class="podcast-hero-cta">
+                        <p class="text-body mb-6">New to our podcasts? Start with these beginner-friendly series:</p>
+                        <div class="hero-quick-links">
+                            <a href="podcasts/dating.html" class="hero-quick-link">
+                                <span class="quick-link-icon">💕</span>
+                                <span class="quick-link-text">Dating Guidance</span>
+                            </a>
+                            <a href="podcasts/shalom-bayis.html" class="hero-quick-link">
+                                <span class="quick-link-icon">🏠</span>
+                                <span class="quick-link-text">Marriage Help</span>
+                            </a>
+                            <a href="podcasts/shmeiras-einayim.html" class="hero-quick-link">
+                                <span class="quick-link-icon">👁️</span>
+                                <span class="quick-link-text">Daily Struggles</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!-- Relationships & Family Section -->
-        <section class="section">
+        <!-- Path Selection Guide -->
+        <section class="section bg-secondary">
             <div class="container">
-                <div class="text-center mb-48">
-                    <h2>Relationships & Family</h2>
-                    <p class="large-text">Build stronger connections and create homes filled with peace and love</p>
-                    <p style="color: var(--soft-gray); margin-top: 16px;">For couples, singles, and anyone seeking deeper relationships</p>
+                <div class="section-header">
+                    <h2 class="text-headline mb-6">Choose Your Learning Path</h2>
+                    <p class="text-body-large max-width-800 mx-auto mb-12">Not sure where to start? Each category addresses different life challenges. Choose based on what you're facing right now.</p>
                 </div>
                 
-                <div class="series-grid">
-                    <div class="series-card">
-                        <div style="position: relative;">
-                            <img src="/Images/podcast-cover-full.png" alt="Dating Series" class="series-cover">
-                            <div style="position: absolute; top: 12px; right: 12px; background: var(--warm-gold); color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">BEGINNER</div>
+                <div class="podcast-categories">
+                    <div class="podcast-category-card" data-category="relationships">
+                        <div class="category-card-header">
+                            <div class="category-card-icon">💕</div>
+                            <h3>Relationships & Marriage</h3>
+                            <p>Building deeper connections and creating homes filled with peace</p>
                         </div>
-                        <div class="series-content">
-                            <h3 class="series-title">Dating</h3>
-                            <p class="series-tagline">Find Your Bashert with Torah Wisdom</p>
-                            <p class="series-description">Complete guidance from self-preparation to engagement. Navigate Jewish dating with practical Torah wisdom, covering everything from building yourself to making it through engagement successfully.</p>
-                            <div style="display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap;">
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">8 Episodes</span>
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">Complete</span>
+                        <div class="category-preview">
+                            <div class="preview-item">
+                                <strong>Dating:</strong> Finding and preparing for your bashert
                             </div>
-                            <a href="podcasts/dating.html" class="btn btn-primary btn-full">Listen Now</a>
+                            <div class="preview-item">
+                                <strong>Shalom Bayis:</strong> From "me" to "we" in marriage
+                            </div>
+                            <div class="preview-item">
+                                <strong>Hebrew Series:</strong> For Hebrew-speaking couples
+                            </div>
+                        </div>
+                        <div class="category-card-footer">
+                            <span class="category-count">3 Series</span>
+                            <a href="#relationships" class="category-explore">Explore →</a>
                         </div>
                     </div>
                     
-                    <div class="series-card">
-                        <div style="position: relative;">
-                        <img src="/Images/shalom-bayis-cover.png" alt="Shalom Bayis Series" class="series-cover">
-                            <div style="position: absolute; top: 12px; right: 12px; background: var(--warm-gold); color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">BEGINNER</div>
+                    <div class="podcast-category-card" data-category="growth">
+                        <div class="category-card-header">
+                            <div class="category-card-icon">🌱</div>
+                            <h3>Personal Growth</h3>
+                            <p>Transforming challenges into opportunities for spiritual elevation</p>
                         </div>
-                        <div class="series-content">
-                            <h3 class="series-title">Shalom Bayis</h3>
-                            <p class="series-tagline">From "Me" to "We" - The Complete Guide</p>
-                            <p class="series-description">Build real intimacy and partnership in Jewish marriage. Navigate the transition from individual to couple, handle conflicts constructively, and create a home filled with peace and love.</p>
-                            <div style="display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap;">
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">Complete Series</span>
+                        <div class="category-preview">
+                            <div class="preview-item">
+                                <strong>Shmeiras Einayim:</strong> Daily spiritual battles
                             </div>
-                            <a href="podcasts/shalom-bayis.html" class="btn btn-primary btn-full">Listen Now</a>
+                            <div class="preview-item">
+                                <strong>Mesilas Yesharim:</strong> Systematic character development
+                            </div>
+                        </div>
+                        <div class="category-card-footer">
+                            <span class="category-count">2 Series</span>
+                            <a href="#growth" class="category-explore">Explore →</a>
                         </div>
                     </div>
                     
-                    <div class="series-card">
-                        <div style="position: relative;">
-                        <img src="/Images/shalom-bayis-heb.png" alt="Shalom Bayis Hebrew Series" class="series-cover">
-                            <div style="position: absolute; top: 12px; right: 12px; background: var(--primary-navy); color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">HEBREW</div>
+                    <div class="podcast-category-card" data-category="daily">
+                        <div class="category-card-header">
+                            <div class="category-card-icon">🗣️</div>
+                            <h3>Daily Living</h3>
+                            <p>Mastering the art of speech and elevating everyday experiences</p>
                         </div>
-                        <div class="series-content">
-                            <h3 class="series-title">שלום בית עברית</h3>
-                            <p class="series-tagline">הביאו את השכינה לבית</p>
-                            <p class="series-description">בניית בית יהודי קדוש ומאושר. הדרכה מעמיקה לזוגות דוברי עברית בבניית קשר אמיתי ושלום בית.</p>
-                            <div style="display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap;">
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">Complete Series</span>
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">Hebrew</span>
+                        <div class="category-preview">
+                            <div class="preview-item">
+                                <strong>Shemiras Halashon:</strong> Mastering the power of words
                             </div>
-                            <a href="podcasts/shalom-bayis-hebrew.html" class="btn btn-primary btn-full">Listen Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Daily Practice Section -->
-        <section class="section" style="background: var(--light-blue);">
-            <div class="container">
-                <div class="text-center mb-48">
-                    <h2>Daily Practice</h2>
-                    <p class="large-text">Navigate everyday challenges with Torah guidance</p>
-                    <p style="color: var(--soft-gray); margin-top: 16px;">For anyone seeking practical tools for daily spiritual living</p>
-                </div>
-                
-                <div class="series-grid">
-                    <div class="series-card">
-                        <div style="position: relative;">
-                            <img src="/Images/shemiras-einyim-cover.png" alt="Shmeiras Einayim Series" class="series-cover">
-                            <div style="position: absolute; top: 12px; right: 12px; background: var(--warm-gold); color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">BEGINNER</div>
-                        </div>
-                        <div class="series-content">
-                            <h3 class="series-title">Shmeiras Einayim</h3>
-                            <p class="series-tagline">Win the Battle That Happens Every Day</p>
-                            <p class="series-description">Practical daily strategies for maintaining spiritual focus in a challenging world. Real-world guidance for the struggles modern Jews face.</p>
-                            <div style="display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap;">
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">Complete Series</span>
+                            <div class="preview-item">
+                                <strong>Shabbos Malkesa:</strong> Weekly spiritual elevation
                             </div>
-                            <a href="podcasts/shmeiras-einayim.html" class="btn btn-primary btn-full">Listen Now</a>
                         </div>
-                    </div>
-                    
-                    <div class="series-card">
-                        <div style="position: relative;">
-                            <img src="/Images/shmeiras-halashon.png" alt="Shemiras Halashon Series" class="series-cover">
-                            <div style="position: absolute; top: 12px; right: 12px; background: var(--primary-navy); color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">ADVANCED</div>
-                        </div>
-                        <div class="series-content">
-                            <h3 class="series-title">Shemiras Halashon</h3>
-                            <p class="series-tagline">Master the Power of Your Words</p>
-                            <p class="series-description">When to speak, when to stay silent - navigate speech ethics in real life. Daily guidance for ethical communication in all relationships.</p>
-                            <div style="display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap;">
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">150+ Episodes</span>
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">Ongoing</span>
-                            </div>
-                            <a href="podcasts/shemiras-halashon.html" class="btn btn-primary btn-full">Listen Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Spiritual Growth Section -->
-        <section class="section">
-            <div class="container">
-                <div class="text-center mb-48">
-                    <h2>Spiritual Growth</h2>
-                    <p class="large-text">Transform knowledge into reality</p>
-                    <p style="color: var(--soft-gray); margin-top: 16px;">For those ready to deepen their spiritual practice and character development</p>
-                </div>
-                
-                <div class="series-grid">
-                    <div class="series-card">
-                        <div style="position: relative;">
-                            <img src="/Images/shabbos-malkesa-cover.png" alt="Shabbos Malkesa Series" class="series-cover">
-                            <div style="position: absolute; top: 12px; right: 12px; background: var(--warm-gold); color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">BEGINNER</div>
-                        </div>
-                        <div class="series-content">
-                            <h3 class="series-title">Shabbos Malkesa</h3>
-                            <p class="series-tagline">Your Weekly Audience with the King</p>
-                            <p class="series-description">Transform Shabbos from routine into the spiritual highlight of your week. Practical guidance for deeper Shabbos connection and meaningful observance.</p>
-                            <div style="display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap;">
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">Weekly Series</span>
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">Ongoing</span>
-                            </div>
-                            <a href="podcasts/shabbos-malkesa.html" class="btn btn-primary btn-full">Listen Now</a>
-                        </div>
-                </div>
-                
-                    <div class="series-card">
-                        <div style="position: relative;">
-                            <img src="/Images/mesilas-yesharim-cover.png" alt="Mesilas Yesharim Series" class="series-cover">
-                            <div style="position: absolute; top: 12px; right: 12px; background: var(--primary-navy); color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">ADVANCED</div>
-                        </div>
-                        <div class="series-content">
-                            <h3 class="series-title">Mesilas Yesharim</h3>
-                            <p class="series-tagline">Transform Knowledge into Reality</p>
-                            <p class="series-description">Systematic approach to spiritual growth that actually works. Based on the classic text, this series provides practical tools for character development and meaningful spiritual progress.</p>
-                            <div style="display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap;">
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">Weekly Series</span>
-                                <span style="background: var(--warm-cream); padding: 4px 8px; border-radius: 4px; font-size: 12px;">Ongoing</span>
-                            </div>
-                            <a href="podcasts/mesilas-yesharim.html" class="btn btn-primary btn-full">Listen Now</a>
+                        <div class="category-card-footer">
+                            <span class="category-count">2 Series</span>
+                            <a href="#daily" class="category-explore">Explore →</a>
                         </div>
                     </div>
                 </div>

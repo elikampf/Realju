@@ -65,34 +65,13 @@
                     <li>
                         <a href="podcasts.html" class="nav-link has-dropdown">Podcasts</a>
                         <div class="dropdown-menu">
-                            <a href="podcasts/dating.html">
-                                <div class="series-title">Dating</div>
-                                <div class="series-tagline">Find Your Bashert</div>
-                            </a>
-                            <a href="podcasts/shalom-bayis.html">
-                                <div class="series-title">Shalom Bayis</div>
-                                <div class="series-tagline">From "Me" to "We"</div>
-                            </a>
-                            <a href="podcasts/shalom-bayis-hebrew.html">
-                                <div class="series-title">שלום בית עברית</div>
-                                <div class="series-tagline">הביאו את השכינה לבית</div>
-                            </a>
-                            <a href="podcasts/shmeiras-einayim.html">
-                                <div class="series-title">Shmeiras Einayim</div>
-                                <div class="series-tagline">Win the Daily Battle</div>
-                            </a>
-                            <a href="podcasts/shemiras-halashon.html">
-                                <div class="series-title">Shemiras Halashon</div>
-                                <div class="series-tagline">Master Your Words</div>
-                            </a>
-                            <a href="podcasts/shabbos-malkesa.html">
-                                <div class="series-title">Shabbos Malkesa</div>
-                                <div class="series-tagline">Weekly Inspiration</div>
-                            </a>
-                            <a href="podcasts/mesilas-yesharim.html">
-                                <div class="series-title">Mesilas Yesharim</div>
-                                <div class="series-tagline">Spiritual Growth</div>
-                            </a>
+                            <a href="podcasts/dating.html">Dating</a>
+                            <a href="podcasts/shalom-bayis.html">Shalom Bayis</a>
+                            <a href="podcasts/shalom-bayis-hebrew.html">שלום בית עברית</a>
+                            <a href="podcasts/shmeiras-einayim.html">Shmeiras Einayim</a>
+                            <a href="podcasts/shemiras-halashon.html">Shemiras Halashon</a>
+                            <a href="podcasts/shabbos-malkesa.html">Shabbos Malkesa</a>
+                            <a href="podcasts/mesilas-yesharim.html">Mesilas Yesharim</a>
                         </div>
                     </li>
                     <li><a href="blog.html" class="nav-link">Blog</a></li>
@@ -156,63 +135,137 @@
         </section>
         
         <!-- Series Overview Section -->
-        <section class="section">
+        <section class="section" id="series-overview">
             <div class="container">
-                <div class="text-center mb-48">
-                    <h2>Explore All Our Series</h2>
-                    <p class="large-text">Deep dives into the areas that matter most</p>
+                <div class="section-header">
+                    <div class="text-overline text-accent mb-4">Torah Podcast Series</div>
+                    <h2 class="text-headline mb-6">Start Where You Are, Grow Where You're Headed</h2>
+                    <p class="text-body-large max-width-800 mx-auto mb-12">Choose from our carefully crafted series, each designed to address specific challenges in Jewish life. Real wisdom, practical guidance, immediate application.</p>
+                </div>
+                
+                <!-- Featured Series Quick Links -->
+                <div class="featured-categories">
+                    <div class="category-quick-link" data-category="relationships">
+                        <div class="category-icon">💕</div>
+                        <h3>Relationships & Marriage</h3>
+                        <p>Build deeper connections and create homes filled with peace</p>
+                        <div class="category-count">3 Series</div>
+                    </div>
+                    <div class="category-quick-link" data-category="growth">
+                        <div class="category-icon">🌱</div>
+                        <h3>Personal Growth</h3>
+                        <p>Transform challenges into opportunities for spiritual elevation</p>
+                        <div class="category-count">2 Series</div>
+                    </div>
+                    <div class="category-quick-link" data-category="daily">
+                        <div class="category-icon">🗣️</div>
+                        <h3>Daily Living</h3>
+                        <p>Master the art of speech and elevate your Shabbos experience</p>
+                        <div class="category-count">2 Series</div>
+                    </div>
                 </div>
                 
                 <div id="series-container" class="series-grid">
                     <!-- Series cards will be dynamically loaded by JavaScript -->
                 </div>
+                
+                <div class="section-cta">
+                    <a href="podcasts.html" class="btn btn-outline btn-lg">View All Podcast Series</a>
+                </div>
             </div>
         </section>
         
         <!-- Blog Preview Section -->
-        <section class="section" style="background: var(--light-blue);">
+        <section class="section bg-secondary">
             <div class="container">
-                <div class="text-center mb-48">
-                    <h2>Building Your Dream Marriage Together</h2>
-                    <p class="large-text">Join us on our blog where we share timeless wisdom and practical insights to enhance your marriage.</p>
+                <div class="section-header">
+                    <div class="text-overline text-accent mb-4">Marriage Wisdom Blog</div>
+                    <h2 class="text-headline mb-6">Transform Your Marriage With Torah Wisdom</h2>
+                    <p class="text-body-large max-width-800 mx-auto mb-12">Deep insights and practical guidance for building the Jewish marriage you've always dreamed of. Real challenges, real solutions, real results.</p>
                 </div>
                 
-                <div class="blog-grid">
-                    <article class="blog-card animate-fade-in-up" style="animation-delay: 0.1s;">
-                        <div class="blog-icon">💍</div>
-                        <a href="blog.html#marriage-wall" class="blog-title">Why Every Marriage Hits the Wall (And How to Break Through)</a>
-                        <p class="blog-preview">Every couple faces this moment. Here's how to turn crisis into breakthrough...</p>
-                        <div class="blog-meta">5 min read</div>
+                <div class="premium-blog-grid">
+                    <article class="premium-blog-card animate-fade-in-up" style="animation-delay: 0.1s;">
+                        <div class="blog-card-header">
+                            <div class="blog-card-icon">💍</div>
+                        </div>
+                        <div class="blog-card-content">
+                            <a href="blog.html#marriage-wall" class="premium-blog-title">Why Every Marriage Hits the Wall (And How to Break Through)</a>
+                            <p class="premium-blog-preview">Every couple faces this moment where everything feels stuck. The challenge isn't avoiding the wall—it's learning how to break through it together and emerge stronger than before.</p>
+                            <div class="blog-card-footer">
+                                <div class="premium-blog-meta">5 min read</div>
+                                <a href="blog.html#marriage-wall" class="blog-read-more">Read More →</a>
+                            </div>
+                        </div>
                     </article>
                     
-                    <article class="blog-card animate-fade-in-up" style="animation-delay: 0.2s;">
-                        <div class="blog-icon">✨</div>
-                        <a href="blog.html#divine-partner" class="blog-title">Bringing the Divine Into Your Marriage: The Missing Partner</a>
-                        <p class="blog-preview">Your marriage has a third partner you might be ignoring...</p>
-                        <div class="blog-meta">7 min read</div>
+                    <article class="premium-blog-card animate-fade-in-up" style="animation-delay: 0.2s;">
+                        <div class="blog-card-header">
+                            <div class="blog-card-icon">✨</div>
+                        </div>
+                        <div class="blog-card-content">
+                            <a href="blog.html#divine-partner" class="premium-blog-title">Bringing the Divine Into Your Marriage: The Missing Partner</a>
+                            <p class="premium-blog-preview">Your marriage isn't just between two people. There's a third partner who can transform your relationship from ordinary to extraordinary—if you know how to invite Him in.</p>
+                            <div class="blog-card-footer">
+                                <div class="premium-blog-meta">7 min read</div>
+                                <a href="blog.html#divine-partner" class="blog-read-more">Read More →</a>
+                            </div>
+                        </div>
                     </article>
                     
-                    <article class="blog-card animate-fade-in-up" style="animation-delay: 0.3s;">
-                        <div class="blog-icon">🤝</div>
-                        <a href="blog.html#fighting-guide" class="blog-title">How to Fight Without Destroying Your Marriage: A Torah Approach</a>
-                        <p class="blog-preview">Conflict is inevitable. Damage is optional. Learn the difference...</p>
-                        <div class="blog-meta">6 min read</div>
+                    <article class="premium-blog-card animate-fade-in-up" style="animation-delay: 0.3s;">
+                        <div class="blog-card-header">
+                            <div class="blog-card-icon">🤝</div>
+                        </div>
+                        <div class="blog-card-content">
+                            <a href="blog.html#fighting-guide" class="premium-blog-title">How to Fight Without Destroying Your Marriage: A Torah Approach</a>
+                            <p class="premium-blog-preview">Conflict is inevitable in any marriage. But damage is optional. Learn the Torah-based approach to handling disagreements that actually strengthens your bond.</p>
+                            <div class="blog-card-footer">
+                                <div class="premium-blog-meta">6 min read</div>
+                                <a href="blog.html#fighting-guide" class="blog-read-more">Read More →</a>
+                            </div>
+                        </div>
                     </article>
                 </div>
                 
-                <div class="text-center">
-                    <a href="blog.html" class="btn btn-primary btn-large">Explore Our Marriage Blog</a>
+                <div class="section-cta">
+                    <a href="blog.html" class="btn btn-primary btn-lg">Explore Marriage Wisdom Blog</a>
                 </div>
             </div>
         </section>
         
         <!-- About Preview Section -->
-        <section class="about-preview">
+        <section class="section premium-about-preview">
             <div class="container">
-                <div class="about-content">
-                    <h2>Some Truths Can't Be Filtered</h2>
-                    <p class="large-text mb-32">Rabbi Arik Klapper brings over 20 years of practical Torah guidance to modern life challenges. Torah wisdom profoundly impacts daily life by providing clear explanations, relatable examples, and practical guidance on living Jewishly today. Each topic, from personal growth to relationships, is simplified and applied without shortcuts, fostering honest discussions about integrating timeless truths into modern living.</p>
-                    <a href="about.html" class="btn btn-secondary btn-large">Learn More About Rabbi Klapper</a>
+                <div class="about-preview-content">
+                    <div class="about-preview-image">
+                        <img src="/Images/Profile-image.png" alt="Rabbi Ari Klapper" />
+                    </div>
+                    <div class="about-preview-text">
+                        <div class="text-overline text-accent mb-4">Meet Rabbi Ari Klapper</div>
+                        <h2>Some Truths Can't Be Filtered</h2>
+                        <p class="text-body-large mb-8">Over 20 years of practical Torah guidance for modern life challenges. Torah wisdom that creates real change in real lives—no shortcuts, no filters, just authentic guidance for authentic living.</p>
+                        
+                        <div class="about-stats">
+                            <div class="about-stat">
+                                <div class="about-stat-number">20+</div>
+                                <div class="about-stat-label">Years Experience</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="about-stat-number">1000+</div>
+                                <div class="about-stat-label">People Guided</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="about-stat-number">7</div>
+                                <div class="about-stat-label">Podcast Series</div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+                            <a href="about.html" class="btn btn-outline btn-lg">Learn My Story</a>
+                            <a href="contact.html" class="btn btn-primary btn-lg">Get Personal Guidance</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
